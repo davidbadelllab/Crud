@@ -1,0 +1,78 @@
+.admin {
+    width: 200px;
+    height: 60px;
+    outline: none;
+    border: none;
+    position: relative;
+    border-radius: 180px;
+    cursor: pointer;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab,#5073b8,#1098ad,#6fba82);
+    -webkit-background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab,#5073b8,#1098ad,#6fba82);
+    -moz-background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab,#5073b8,#1098ad,#6fba82);
+    -ms-background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab,#5073b8,#1098ad,#6fba82);
+    -o-background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab,#5073b8,#1098ad,#6fba82);    
+}
+    
+    .admin::after {
+        content:'';
+        position: absolute;
+        display: block;
+        border-radius: 180px;
+        width: calc(100% - 12px);
+        height: calc(100% - 12px);
+        top: 6px;
+        left: 6px;
+        background:white;
+    }
+    
+    .admin span {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 1.5rem;
+        color: rgb(189, 20, 161);
+        z-index: 1;
+        position: relative;
+        background: transparent;
+        }
+    
+        .admin::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(60deg, #f79533, #f37055,#ef4e7b,#a166ab,#5073b8, #1098ad, #07b39b, #6fba82);
+            top: 0;
+            left: 0;
+            filter: blur(15px);
+            border-radius: 180px;
+            opacity: 0;
+        }
+    
+        .admin:hover {
+            background-size: 400%;
+            animation:rotateBorder 10s linear infinite;
+    
+        }
+    
+        @keyframes rotateBorder {
+    0% {
+        background-position: 0 0;
+    }
+    5% {
+        background-position:400% 0 ;
+    }
+    100% {
+    background-position: 0 0;
+    }
+        }
+    
+        .admin:hover::before {
+            opacity: 1;
+            transition: 0.3s opacity ease-in-out;
+            filter: blur(25px);
+        }

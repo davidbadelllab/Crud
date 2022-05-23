@@ -1,0 +1,128 @@
+body {
+  background: linear-gradient(-45deg, #f56134, #f8b9d1, #6abb67,#192c97);
+  background-size: 500% 500%;
+  position: relative;
+  animation: change 35s ease-in-out infinite;
+  padding-bottom: 2rem; 
+}
+* {
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  
+ }
+ .img {
+  display:block;
+  margin:auto;
+  width: 300px;
+  
+ }
+ span {
+  position: sticky;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  border: 3px solid #fff;
+  height: 60px;
+  width: 600px;
+  padding: 1rem 2rem; 
+  left: 899px;
+}
+.contenedor {
+  width: 100%;
+  padding: 15px;
+}
+
+.formulario {
+  background: rgba(243, 234, 241, 0.4);
+  padding: 3px;
+}
+
+input[type="email"]{
+text-align: center;
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+  
+}
+input[type="password"] {
+  text-align: center;
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+}
+.input-contenedor {
+  margin-bottom: 15px;
+  
+}
+.icon {
+  min-width: 50px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.button {
+  border: none;
+  margin-left: 200px;
+  font-size: 12px;
+  background: #ffffff;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+.button:hover {
+  background: rgb(81, 60, 199);
+}
+
+.link {
+  text-decoration: none;
+  color: #59328b;
+  font-weight: 600;
+}
+.link:hover {
+  color: cadetblue;
+}
+@media (min-width: 768px) {
+  .formulario {
+    margin: auto;
+    width: 500px;
+    margin-top: 50px;
+    border-radius: 2%;
+  }
+}
+@media (min-width: 488px) {
+  .centrar {
+    margin: auto;
+    width: 500px;
+    margin-top: 50px;
+    border-radius: 2%;
+  }
+}
+
+p {
+text-align: center;
+color: #ffffff;
+font-size: 15px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lq {
+  justify-content: right;
+  color: #ca28cf;
+}
+
+@keyframes change {
+  0%{
+      background-position: 0 50% ;
+  }
+  50% {
+      background-position: 100% 50% ;
+  }
+  100% {
+      background-position: 0 50% ;
+   }
+  }
